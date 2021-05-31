@@ -15,6 +15,7 @@ templateHead.innerHTML = `
 <ul>
   <li><h2><a href="../Articles.html"> Articles</a></h2></li>
   <li><h2><a href="../Events.html"> Events</a></h2></li>
+  <li><h2><a href="../Map.html"> Interactive Map</a></h2></li>
   <li><h2><a href="../About-Us.html"> About the Society</a></h2></li>
   <li><h2><a href="../Contact-Us.html"> Contact Us</a></h2></li>
 </ul>

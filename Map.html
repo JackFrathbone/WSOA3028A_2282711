@@ -1,0 +1,41 @@
+<html>
+<main>
+
+    <head>
+        <title>Interactive Map</title>
+        <base href="./" target="_self">
+        <script src="./js/display.js" type="text/javascript" defer></script>
+        <script src="./js/interactiveMap.js" type="text/javascript" defer></script>
+        <meta property="og:title" content="JAHS Home" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://jackfrathbone.github.io/WSOA3028A_2282711/index.html" />
+        <meta property="og:image" content="https://jackfrathbone.github.io/WSOA3028A_2282711/Images/Logo.jpeg" />
+    </head>
+
+    <body>
+        <h1>Johannesburg Amateur Historical Society: Interactive Map of Important Sites</h1>
+        <img src=".\Images\HistoryOfJoburgMap.png" alt="Map of Joburg City Streets"
+            usemap="#Interactive Map of Historical Joburg" style="width:1920px;height:937px;">
+
+        <map name="Interactive Map of Historical Joburg">
+            <area shape="circle" coords="736, 425, 30" alt="Wits University"
+                onclick="ShowInfo(mapNodes[0]);return false;" href="javascript:;">
+            <area shape="circle" coords="929, 412, 30" alt="Constitution Hill"
+                onclick="ShowInfo(mapNodes[1]);return false;" href="javascript:;">
+            <area shape="circle" coords="793, 560, 30" alt="Musuem Africa" onclick="ShowInfo(mapNodes[2]);return false;"
+                href="javascript:;">
+            <area shape="circle" coords="936, 630, 30" alt="Town Hall" onclick="ShowInfo(mapNodes[3]);return false;"
+                href="javascript:;">
+            <area shape="circle" coords="1498, 432, 30" alt="Our Office" onclick="ShowInfo(mapNodes[4]);return false;"
+                href="javascript:;">
+        </map>
+        <article>
+            <h1 id="heading"></h1>
+            <h2 id="subheading"></h2>
+            <p id="para"></p>
+        </article>
+    </body>
+
+</main>
+
+</html>
