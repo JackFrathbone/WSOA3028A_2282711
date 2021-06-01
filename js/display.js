@@ -33,6 +33,12 @@ templateFoot.innerHTML = `
 <li><h2><a href="./Out-Of-Character.html"> Out Of Character</a></h2></li>
 <li><h2><a href="./Credits.html"> Credits</a></h2></li>
 </ul>
+<hr>
+<img src="./Images/Buttons/geo-citi.gif" alt="Web Button" style="width:88px;height:31px;">
+<img src="./Images/Buttons/anybrowser2.gif" alt="Web Button" style="width:88px;height:31px;">
+<p>@Jack Rathbone 2021</p>
+<img src="./Images/Buttons/bookmark_this_page.gif" alt="Web Button" style="width:88px;height:31px;">
+<img src="./Images/Buttons/got_html.gif" alt="Web Button" style="width:88px;height:31px;">
 </footer>
 `
 
