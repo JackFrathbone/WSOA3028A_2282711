@@ -1,2 +1,4 @@
 User-agent: * 
 Disallow: /
+
+#No robots allowed, this site might confuse old people so it should be hidden from the public

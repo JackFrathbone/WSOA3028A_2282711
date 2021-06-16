@@ -26,8 +26,14 @@ const mapNodes = [
     }
 ]
 
+
+
+
 function ShowInfo(mapNodes) {
     document.getElementById("heading").innerHTML = mapNodes.title;
     document.getElementById("subheading").innerHTML = mapNodes.Neighbourhood;
     document.getElementById("para").innerHTML = mapNodes.text;
+
+    const focusElement = document.getElementById("para");
+    focusElement.scrollIntoView();
 }
