@@ -1,4 +1,5 @@
 body{        
+    text-align:center;
     background-color: black;
     color: white;
     font-family: 'Courier New', Courier, monospace;
@@ -20,16 +21,31 @@ h3{
     font-weight: normal;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    display: flex;
+  }
+
 p{
     font-size: medium; 
 }
 
 header{
+    max-width: 100%;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
     text-align:center;
+    justify-content: space-evenly;
+    margin: 0;
 }
 
 header img{
-    display:inline-block;
+    display: inline-flex;
+    justify-content: space-between;
+    max-width: 100%;
+    height: auto;
     margin:auto;
 }
 
@@ -60,6 +76,7 @@ nav.nonMenu{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    text-align: left;
     justify-content: left;
     margin: 50px;
     border-style: dashed;
@@ -70,7 +87,12 @@ nav.nonMenu{
 }
 
 footer{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
     text-align:center;
+    justify-content:center;
+    margin: 0;
 }
 
 footer ul{
@@ -88,7 +110,7 @@ footer li{
     border: 4px solid #00A3E8;
     background-color: #0D28F2;
     padding: 5px;
-    margin: 0;
+    margin: 5px;
 }
 
 footer a{
@@ -109,12 +131,11 @@ a:visited{
     color:  #BB86FC; 
 }
 
-
-
 article{
     display:flex;
     flex-direction: column;
     justify-content: left;
+    text-align:left;
     margin-right: 100px;
     margin-left: 100px;
     margin-top: 50px;
@@ -128,8 +149,79 @@ article{
 
 hr.light{
     border: 8px solid #00A3E8;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
 }
 
 hr.dark{
     border: 8px solid #0D28F2;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+}
+
+span{
+    max-width: 100%;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    text-align:left;
+    justify-content: left;
+    margin: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    header img{
+        height: 45px;
+    }
+
+    article{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 0;
+        margin-left: 0;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border-style: dashed;
+        border-color: #00A3E8;
+        border-width: 5px;
+        border-radius: 5px;
+        padding: 5px;
+    }
+
+    #MapSpan img{
+       max-width: 100%;
+       width: auto;
+       height: auto;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    header img{
+        height: 100px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+
+    header img{
+        height: 100%;
+    }
+
+    article{
+        display:flex;
+        flex-direction: column;
+        justify-content: left;
+        margin-right: 100px;
+        margin-left: 100px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        border-style: dashed;
+        border-color: #00A3E8;
+        border-width: 10px;
+        border-radius: 10px;
+        padding: 15px;
+    }
 }
